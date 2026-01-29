@@ -1,0 +1,12 @@
+ecommerce_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: user
+      password: password
+      port: 5432
+      dbname: dwh
+      schema: public
+      threads: 4

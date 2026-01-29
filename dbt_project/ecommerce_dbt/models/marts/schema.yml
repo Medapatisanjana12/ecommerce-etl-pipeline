@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_users
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_products
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
